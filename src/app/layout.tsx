@@ -6,6 +6,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +16,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    AOS.init({
+         duration: 1000,
+         once: false,
+       })
+ }, [])
   return (
     <html suppressHydrationWarning lang="en"  className="dark" style={{'colorScheme': 'dark'}}>
       {/*
@@ -34,4 +42,5 @@ export default function RootLayout({
   );
 }
 
-import { Providers } from "./providers";
+import { Providers } from "./providers";import { useEffect } from "react";
+
