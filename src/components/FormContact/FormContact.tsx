@@ -4,7 +4,6 @@ import { Formik, Form } from 'formik';
 import { TextField } from './TextField';
 import * as Yup from 'yup';
 import { TextAreaField } from './TextAreaField';
-import SendEmail from '../../services/sendmail';
 
 export const FormContact = () => {
   const emailValidation =
@@ -29,10 +28,6 @@ export const FormContact = () => {
       validationSchema={validate}
       onSubmit={(values) => {
         console.log(values);
-
-        fetch('/api/contact.json')
-          .then((res) => res.json())
-          .then((data) => console.log(data));
       }}
     >
       {(formik) => (
