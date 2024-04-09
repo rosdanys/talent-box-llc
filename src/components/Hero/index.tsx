@@ -12,25 +12,21 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  <span data-aos="fade-up" data-aos-duration="400">
-                    Unlocking <span className="text-[#fb713b]">Potential,</span>
+                  <span data-aos="fade-up" >
+                    Unlocking <span className="text-primary">Potential,</span>
                   </span>
                   <br />
                   <span
                     data-aos="fade-up"
-                    data-aos-duration="400"
-                    data-aos-delay="400"
                   >
                     {" "}
-                    <span className="text-[#fb713b]">Connecting</span> Talent
+                    <span className="text-primary">Connecting</span> Talent
                   </span>
                 </h1>
 
                 <p
                   className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl"
                   data-aos="fade-up"
-                  data-aos-duration="400"
-                  data-aos-delay="600"
                 >
                   Startup is free Next.js template for startups and SaaS
                   business websites comes with all the essential pages,
@@ -40,7 +36,6 @@ const Hero = () => {
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     data-aos="fade-in"
-                    data-aos-delay="800"
                     href="/"
                     className="rounded-md bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
@@ -48,7 +43,6 @@ const Hero = () => {
                   </Link>
                   <Link
                     data-aos="fade-in"
-                    data-aos-delay="900"
                     href="/"
                     className="inline-block rounded-md bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
