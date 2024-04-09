@@ -1,8 +1,14 @@
 'use client'
-import React from 'react';
-import { ErrorMessage, useField } from 'formik';
+import { ClassAttributes, InputHTMLAttributes } from "react"
+import { ErrorMessage, useField, FieldHookConfig  } from 'formik';
 
-export const TextAreaField = ({ label, ...props }) => {
+type TextFieldProps = {
+  label: string;
+};
+
+export const TextAreaField = ({ label, ...props }:TextFieldProps & InputHTMLAttributes<HTMLTextAreaElement> &
+  ClassAttributes<HTMLTextAreaElement> &
+  FieldHookConfig<string>) => {
   const [field, meta] = useField(props);
   return (
     <div className="mb-[30px]">
@@ -15,7 +21,6 @@ export const TextAreaField = ({ label, ...props }) => {
         }`}
         {...field}
         {...props}
-        autoComplete="off"
       ></textarea>
       <ErrorMessage component="div" name={field.name} className="text-[#dc2626]" />
     </div>

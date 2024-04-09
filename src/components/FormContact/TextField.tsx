@@ -1,8 +1,14 @@
 'use client'
-import React from 'react';
-import { ErrorMessage, useField } from 'formik';
+import { ClassAttributes, InputHTMLAttributes } from "react"
+import { ErrorMessage, useField, FieldHookConfig  } from 'formik';
 
-export const TextField = ({ label, ...props }) => {
+type TextFieldProps = {
+  label: string;
+};
+
+export const TextField = ({ label, ...props}:TextFieldProps & InputHTMLAttributes<HTMLInputElement> &
+  ClassAttributes<HTMLInputElement> &
+  FieldHookConfig<string>) => {
   const [field, meta] = useField(props);
   return (
     <div className="mb-[22px]">
