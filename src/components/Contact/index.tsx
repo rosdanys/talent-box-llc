@@ -1,3 +1,4 @@
+import { FormContact } from "../FormContact/FormContact";
 
 export default function Contact() {
   return (
@@ -52,7 +53,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-        <div
+        {/* <div
           className="wow fadeInUp rounded-lg bg-white dark:bg-dark-2 py-10 px-8 shadow-testimonial dark:shadow-none sm:py-12 sm:px-10 md:p-[60px] lg:p-10 lg:py-12 lg:px-10 2xl:p-[60px]"
           data-wow-delay=".2s"
         >
@@ -87,7 +88,9 @@ export default function Contact() {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
+
+        <FormContact />
       </div>
     </div>
   </div>
