@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    serverActions: {
+      allowedOrigins: ['talent-box-llc.vercel.app', '*.talent-box-llc.vercel.app'],
+    },
+  },
   images: {
     domains: ["localhost",],
     remotePatterns: [
