@@ -4,6 +4,8 @@ import { Formik, Form } from 'formik';
 import { TextField } from './TextField';
 import * as Yup from 'yup';
 import { TextAreaField } from './TextAreaField';
+import { sendContactForm } from '@/libs/actions';
+import toast from 'react-hot-toast';
 
 export const FormContact = () => {
   const emailValidation =
@@ -26,8 +28,16 @@ export const FormContact = () => {
         message: '',
       }}
       validationSchema={validate}
-      onSubmit={(values) => {
-        console.log(values);
+      onSubmit={async (values,{ resetForm }) => {
+      const validSend =  await sendContactForm(values)
+      if(validSend !== undefined){
+       // alert('Send Email')
+       toast.success('Send Success OK!'); 
+        resetForm()
+      }else{
+       // alert('Error')
+       toast.error('Send Fail!!!')
+      }
       }}
     >
       {(formik) => (

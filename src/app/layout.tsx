@@ -32,6 +32,7 @@ export default function RootLayout({
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`} >
         <Providers>
+        <Toaster position="bottom-center" />
           <Header />
           {children}
           <Footer />
@@ -43,4 +44,5 @@ export default function RootLayout({
 }
 
 import { Providers } from "./providers";import { useEffect } from "react";
+import { Toaster } from "react-hot-toast";
 
