@@ -1,7 +1,4 @@
 import nodemailer from "nodemailer";
-
-import fs from "fs";
-import path from "path";
 import { ContactForm } from "@/types/contact";
 
 
@@ -54,27 +51,22 @@ export async function sendMail({
 export async function compileTemplateMail(formdata: ContactForm) {
   let htmlContent = `
   <div style="font-family: sans-serif;">
-  <h1>Contact Form Inquiry</h1>
-  <p>You have received the following inquiry:</p>
-  <br>
-  <p>Name: {{ fullName }}</p>
-  <p>Email: {{ email }}</p>
-  <p>Phone: {{ phone }}</p>
-  <p>Message:</p>
-  <p>{{ message }}</p>
-  <br>
-</div>`
+    <h1>Contact Form Inquiry</h1>
+      <p>You have received the following inquiry:</p>
+      <br>
+        <p>Name: {{ fullName }}</p>
+        <p>Email: {{ email }}</p>
+        <p>Phone: {{ phone }}</p>
+        <p>Message:</p>
+        <p>{{ message }}</p>
+      <br>
+  </div>`
 
    // replace merge tags with values
    htmlContent = replaceMergeTags(formdata, htmlContent);
 
   return htmlContent;
 }
-
-export const stripHTMLTags = (htmlString: string) => {
-  // also replaces <br> tags with new lines
-  return htmlString.replace(/<br>/g, "\n").replace(/<[^>]+>/g, "");
-};
 
 /**
  * Replaces any instance of {{ variableName }} with the values
