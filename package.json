@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.14",
+    "@vercel/speed-insights": "^1.0.10",
     "aos": "^2.3.4",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.1.0",

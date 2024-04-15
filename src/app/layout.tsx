@@ -8,7 +8,7 @@ import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -31,6 +31,7 @@ export default function RootLayout({
       <head /> */}
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`} >
+        <SpeedInsights/>
         <Providers>
         <Toaster position="bottom-center" />
           <Header />
