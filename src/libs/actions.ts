@@ -10,6 +10,5 @@ export async function sendContactForm(formdata: ContactForm) {
     subject: "Contact Form Inquiry",
     body: await compileTemplateMail(formdata),
   })
-  revalidatePath('/contact')
   return sending
 }

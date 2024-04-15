@@ -52,12 +52,18 @@ export async function sendMail({
 
 
 export async function compileTemplateMail(formdata: ContactForm) {
-  const htmlFilePath = path.join(process.cwd(), "src/libs/mail", "template.html");
-
-  let htmlContent = fs.readFileSync(
-    htmlFilePath,
-    "utf8"
-  );
+  let htmlContent = `
+  <div style="font-family: sans-serif;">
+  <h1>Contact Form Inquiry</h1>
+  <p>You have received the following inquiry:</p>
+  <br>
+  <p>Name: {{ fullName }}</p>
+  <p>Email: {{ email }}</p>
+  <p>Phone: {{ phone }}</p>
+  <p>Message:</p>
+  <p>{{ message }}</p>
+  <br>
+</div>`
 
    // replace merge tags with values
    htmlContent = replaceMergeTags(formdata, htmlContent);
