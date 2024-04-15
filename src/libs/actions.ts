@@ -2,6 +2,7 @@
 
 import { ContactForm } from "@/types/contact";
 import { compileTemplateMail, sendMail } from "./mail/sending";
+import { revalidatePath } from "next/cache";
 
 export async function sendContactForm(formdata: ContactForm) {
   const sending =  await sendMail({
@@ -9,5 +10,6 @@ export async function sendContactForm(formdata: ContactForm) {
     subject: "Contact Form Inquiry",
     body: await compileTemplateMail(formdata),
   })
+  revalidatePath('/contact')
   return sending
 }
