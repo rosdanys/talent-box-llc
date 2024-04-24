@@ -17,13 +17,23 @@ export async function sendMail({
     process.env.NEXT_PUBLIC_SMTP_EMAIL_ADMIN_FULLNAME;
 
   const transport = nodemailer.createTransport({
-    service: "gmail",
+    host: 'smtpout.secureserver.net',
     secure: true,
+    tls: {
+        ciphers:'SSLv3'
+    },
+    requireTLS:true,
+    port: 465,
+    debug: true,
     auth: {
       user: SMTP_EMAIL_ADMIN,
       pass: SMTP_PASSWORD,
     },
   });
+
+ 
+
+  // Tester Email
   /* try {
     const testResult = await transport.verify()
     console.log(testResult);
