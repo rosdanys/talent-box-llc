@@ -5,6 +5,7 @@ import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import CultureHome from "@/components/CultureHome";
+import DiversityHome from "@/components/DiversityHome";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import LeaderShipHome from "@/components/LeaderShipHome";
@@ -24,7 +25,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Video />
+      {/* <Video /> */}
       {/* 
       <Features />
       <Video />
@@ -35,6 +36,7 @@ export default function Home() {
       <Pricing />
       <Blog /> */}
       <CultureHome />
+      <DiversityHome />
       <LeaderShipHome />
       <Contact />
     </>

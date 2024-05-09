@@ -6,20 +6,18 @@ export default function CultureHome (){
     <div className="max-w-screen-xl mx-auto md:px-8">
         <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
             <div className="flex-1 sm:hidden lg:block">
-                <Image src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" className="md:max-w-lg sm:rounded-lg" alt=""
+                <Image src="/images/culture/culture_pic.jpg" className="md:max-w-lg sm:rounded-lg" alt=""
                 width={774}
                 height={400}
                  />
             </div>
             <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
-                <h3 className="text-primary font-semibold">
-                    Culture
-                </h3>
                 <p className="text-white text-3xl font-semibold sm:text-4xl">
-                    Build your SaaS solution with help from our experts
+                    Culture
                 </p>
+               
                 <p className="mt-3 text-body-color dark:text-dark-6">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                {`At Talent Box LLC, we're dedicated to creating an inclusive and innovative environment where diversity thrives as the catalyst for success. Built on respect, empathy, and collaboration, our culture fosters continuous growth and development for every team member. With transparency and integrity as our cornerstones, we prioritize ethical standards in all interactions, building trust with clients and candidates alike. As partners in their success stories, we're passionate about making meaningful connections and driving positive change in Talent Acquisition. Join us in reshaping the future, where everyone's potential is valued and unleashed.`}
                 </p>
                 <a href="/culture" className="inline-flex gap-x-1 items-center text-primary hover:text-btn-hover-dark duration-150 font-medium">
                     Learn more

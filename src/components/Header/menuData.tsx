@@ -27,7 +27,7 @@ const menuData: Menu[] = [
       {
         id: 23,
         title: "Diversity, Equity & Inclusion (DEI)",
-        path: "/",
+        path: "/diversity",
         newTab: false,
       },
     ],

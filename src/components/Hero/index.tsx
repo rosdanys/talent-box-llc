@@ -12,13 +12,11 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  <span data-aos="fade-up" >
+                  <span data-aos="fade-up">
                     Unlocking <span className="text-primary">Potential,</span>
                   </span>
                   <br />
-                  <span
-                    data-aos="fade-up"
-                  >
+                  <span data-aos="fade-up">
                     {" "}
                     <span className="text-primary">Connecting</span> Talent
                   </span>
@@ -28,10 +26,7 @@ const Hero = () => {
                   className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl"
                   data-aos="fade-up"
                 >
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                  {`At Talent Box, our motto "Unlocking potential, connecting talent" drives our mission to empower individuals by matching exceptional talent with top-tier opportunities through personalized matchmaking and attentive support.`}
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
