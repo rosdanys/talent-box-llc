@@ -15,7 +15,7 @@ const DiversityPage = () => {
     <>
       <Breadcrumb
         pageName="Diversity, Equity, and Inclusion (DEI)"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description=""
       />
       <Diversity />
     </>

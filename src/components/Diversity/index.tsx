@@ -19,8 +19,10 @@ export default function Diversity (){
         <p className="text-3xl font-semibold text-white sm:text-4xl">
         Diversity, Equity, and Inclusion (DEI)
         </p>
-        <p className="mt-3 text-body-color dark:text-dark-6">
-        <span>Diversity, Equity, and Inclusion Statement:</span>
+        <span className="mt-3 text-body-color dark:text-dark-6">
+
+        <p className="py-2">Diversity, Equity, and Inclusion Statement:</p>
+        
         <p className="py-2">
           {`At Talent Box we are fiercely committed to championing diversity, equity, and inclusion in every aspect of our work. We believe that diversity is not only a strength but a fundamental necessity for driving innovation, fostering creativity, and creating a more equitable society.`}
         </p>
@@ -37,9 +39,11 @@ export default function Diversity (){
           {`Transparency and accountability are integral to our approach. We hold ourselves accountable for promoting fairness and equity in our recruitment practices, ensuring that every candidate is evaluated based on their skills, qualifications, and potential, free from bias or discrimination.`}
         </p>
         <p className="py-2">
-          {`At Tale Box, we stand as allies and advocates for social justice and equality. We believe that by embracing diversity and fostering inclusivity, we can drive positive change and create a world where everyone has the opportunity to thrive, regardless of who they are or where they come from. Join us in our mission to build a more just and equitable future for all.`}
+          {`At Tale Box, we stand as allies and advocates for social justice and equality. We believe that by embracing diversity and fostering inclusivity, we can drive positive change and create a world where everyone has the opportunity to thrive, regardless of who they are or where they come from.`}
+          </p>
+          <p className="py-2">{` Join us in our mission to build a more just and equitable future for all.`}
         </p>
-        </p>
+        </span>
       </div>
     </div>
   </div>

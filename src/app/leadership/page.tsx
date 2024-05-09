@@ -16,7 +16,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="LeaderShip"
-        description="Great leadership orchestrates strategy with precision, nurtures relationships with sincerity, and defines success through collective achievement, not individual accolades."
+        description=""
       />
       <LeaderShip />
     </>
