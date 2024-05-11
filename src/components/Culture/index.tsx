@@ -22,7 +22,7 @@ export default function Culture() {
             <span className="mt-3 text-body-color dark:text-dark-6">
               <p className="py-2">
                 {" "}
-                {`At Talent Box LLC we are dedicated to fostering an inclusive and progressive environment
+                {`At Talent Box we are dedicated to fostering an inclusive and progressive environment
           where every individual has the opportunity to flourish and reach their fullest potential.
           We believe in the power of diversity, equity, and inclusion as catalysts for innovation
           and success. `}
@@ -45,7 +45,7 @@ export default function Culture() {
           clients and candidates. By upholding the highest ethical standards, we build trust and
           credibility in all our interactions. `}</p>
 
-              <p className="py-2">{`At Talent Box LLC, we are not just recruiters; we are partners in our clients' and candidates' success stories. We are passionate about making
+              <p className="py-2">{`At Talent Box, we are not just recruiters; we are partners in our clients' and candidates' success stories. We are passionate about making
           meaningful connections and matching the right talent with the right opportunities, driving
           positive change and impact in the world. `}</p>
               <p className="py-2">
