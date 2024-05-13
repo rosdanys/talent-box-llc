@@ -152,7 +152,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="/"
+                      href="/rpo"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Recruitment Process Outsourcing-(RPO)
@@ -160,20 +160,20 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/executive"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Executive and Professional Search
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Talent Strategy Services
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

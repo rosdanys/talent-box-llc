@@ -6,10 +6,12 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import CultureHome from "@/components/CultureHome";
 import DiversityHome from "@/components/DiversityHome";
+import ExecutiveHome from "@/components/ExecutiveHome";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import LeaderShipHome from "@/components/LeaderShipHome";
 import Pricing from "@/components/Pricing";
+import RpoHome from "@/components/RpoHome";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
@@ -38,6 +40,8 @@ export default function Home() {
       <CultureHome />
       <DiversityHome />
       <LeaderShipHome />
+      <RpoHome/>
+      <ExecutiveHome/>
       <Contact />
     </>
   );

@@ -40,19 +40,13 @@ const menuData: Menu[] = [
       {
         id: 51,
         title: "Recruitment Process Outsourcing-(RPO)",
-        path: "/leadership",
+        path: "/rpo",
         newTab: false,
       },
       {
         id: 52,
         title: "Executive and Professional Search",
-        path: "/culture",
-        newTab: false,
-      },
-      {
-        id: 53,
-        title: "Talent Strategy Services",
-        path: "/",
+        path: "/executive",
         newTab: false,
       },
     ],
@@ -63,25 +57,25 @@ const menuData: Menu[] = [
     newTab: false,
     submenu: [
       {
-        id: 51,
+        id: 31,
         title: "Healthcare",
         path: "/leadership",
         newTab: false,
       },
       {
-        id: 52,
+        id: 32,
         title: "Banking and Financial Services",
         path: "/culture",
         newTab: false,
       },
       {
-        id: 53,
+        id: 33,
         title: "Pharma Manufacturing",
         path: "/",
         newTab: false,
       },
       {
-        id: 54,
+        id: 34,
         title: "Data Analytics, Engineering, and Technology",
         path: "/",
         newTab: false,
