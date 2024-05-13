@@ -46,7 +46,7 @@ export default function Rpo() {
         </div>
         <div className="flex-1 lg:block">
           <Image
-            src="/images/rpo/rpo.jpg"
+            src="/images/mrpo/mrpo.jpg"
             className="sm:rounded-lg md:max-w-full lg:max-w-lg"
             width={774}
             height={600}

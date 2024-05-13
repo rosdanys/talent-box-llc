@@ -36,7 +36,7 @@ Our Executive and Professional Search services specialize in connecting organiza
           </div>
           <div className="flex-1 sm:hidden lg:block">
             <Image
-              src="/images/noimage.jpg"
+              src="/images/executive/executive.jpg"
               className="sm:rounded-lg md:max-w-lg"
               alt=""
               width={774}
