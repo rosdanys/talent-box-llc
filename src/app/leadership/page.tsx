@@ -1,6 +1,4 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Contact from "@/components/Contact";
-import FormContact from "@/components/Contact";
 import LeaderShip from "@/components/LeaderShip";
 
 import { Metadata } from "next";

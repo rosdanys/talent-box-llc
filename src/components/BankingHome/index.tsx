@@ -16,7 +16,7 @@ export default function BankingHome() {
           </div>
           <div className="mt-6 max-w-xl space-y-3 px-4 sm:px-0 md:mt-0 lg:max-w-2xl">
             <p className="text-3xl font-semibold text-white sm:text-4xl">
-            Banking and Finance Services
+            Banking and Finance
             </p>
 
             <p className="mt-3 text-body-color dark:text-dark-6">             

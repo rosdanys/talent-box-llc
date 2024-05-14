@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Culture from "@/components/Culture";
 import Rpo from "@/components/Rpo";
 
 import { Metadata } from "next";

@@ -1,8 +1,5 @@
 import Banking from "@/components/Banking";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Culture from "@/components/Culture";
-import Diversity from "@/components/Diversity";
-import Executive from "@/components/Executive";
 
 import { Metadata } from "next";
 
@@ -16,7 +13,7 @@ const BankingPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Banking and Finance Services"
+        pageName="Banking and Finance"
         description=""
       />
       <Banking />

@@ -16,7 +16,7 @@ export default function Banking() {
           </div>
           <div className="mt-6 max-w-xl space-y-3 px-4 sm:px-0 md:mt-0 lg:max-w-2xl">
             <p className="text-3xl font-semibold text-white sm:text-4xl">
-            Banking and Finance Services
+            Banking and Finance
             </p>
             <span className="mt-3 text-body-color dark:text-dark-6">
               <p className="py-2">{`Navigating the challenges of recruiting in the financial and professional services industry, especially amidst mergers, acquisitions, and evolving regulations, demands specialized expertise. With Talent Box, you gain access to experienced professionals adept at sourcing, attracting, and engaging top talent across various sectors including retail, small business banking, commercial banking, insurance, wealth management, and private banking.`}</p>

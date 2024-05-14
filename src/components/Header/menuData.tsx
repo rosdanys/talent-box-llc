@@ -64,7 +64,7 @@ const menuData: Menu[] = [
       },
       {
         id: 32,
-        title: "Banking and Financial Services",
+        title: "Banking and Financial",
         path: "/banking",
         newTab: false,
       },
