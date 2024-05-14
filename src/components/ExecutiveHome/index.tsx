@@ -4,14 +4,22 @@ export default function ExecutiveHome() {
   return (
     <section className="bg-dark-700 py-14 " data-aos="fade-in">
       <div className="mx-auto max-w-screen-xl md:px-8">
-        <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
+        <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex lg:flex-row-reverse">
+        <div className="flex-1 sm:hidden lg:block">
+            <Image
+              src="/images/executive/executive.jpg"
+              className="sm:rounded-lg md:max-w-lg"
+              alt=""
+              width={774}
+              height={400}
+            />
+          </div>
           <div className="mt-6 max-w-xl space-y-3 px-4 sm:px-0 md:mt-0 lg:max-w-2xl">
             <p className="text-3xl font-semibold text-white sm:text-4xl">
               Executive and Professional Search
             </p>
 
-            <p className="mt-3 text-body-color dark:text-dark-6">
-              <span className="my-2">{`Experience and Professional Search:`}</span>
+            <p className="mt-3 text-body-color dark:text-dark-6">             
               <span className="my-2">{`
 Our Executive and Professional Search services specialize in connecting organizations with top-tier talent, leveraging industry expertise and a vast network to deliver exceptional recruitment solutions tailored to clients' strategic objectives`}</span>
             </p>
@@ -34,15 +42,7 @@ Our Executive and Professional Search services specialize in connecting organiza
               </svg>
             </a>
           </div>
-          <div className="flex-1 sm:hidden lg:block">
-            <Image
-              src="/images/executive/executive.jpg"
-              className="sm:rounded-lg md:max-w-lg"
-              alt=""
-              width={774}
-              height={400}
-            />
-          </div>
+          
         </div>
       </div>
     </section>

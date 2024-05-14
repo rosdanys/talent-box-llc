@@ -4,8 +4,13 @@ export default function DiversityHome (){
   return (
     <section className="py-14 bg-dark-700 " data-aos="fade-in">
     <div className="max-w-screen-xl mx-auto md:px-8">
-        <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
-           
+        <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex lg:flex-row-reverse">
+        <div className="flex-1 sm:hidden lg:block">
+                <Image src="/images/dei/dei.jpg" className="md:max-w-lg sm:rounded-lg" alt=""
+                width={774}
+                height={400}
+                 />
+            </div>
             <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
                 <p className="text-white text-3xl font-semibold sm:text-4xl">
                 Diversity, Equity, and Inclusion (DEI)
@@ -27,12 +32,7 @@ Join us in our mission to build a world where everyone has the opportunity to th
                     </svg>
                 </a>
             </div>
-            <div className="flex-1 sm:hidden lg:block">
-                <Image src="/images/dei/dei.jpg" className="md:max-w-lg sm:rounded-lg" alt=""
-                width={774}
-                height={400}
-                 />
-            </div>
+           
         </div>
     </div>
 </section>
