@@ -1,3 +1,4 @@
+import Banking from "@/components/Banking";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Culture from "@/components/Culture";
 import Diversity from "@/components/Diversity";
@@ -11,16 +12,16 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const ExecutivePage = () => {
+const BankingPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Executive and Professional Search"
+        pageName="Banking and Finance Services"
         description=""
       />
-      <Executive />
+      <Banking />
     </>
   );
 };
 
-export default ExecutivePage;
+export default BankingPage;

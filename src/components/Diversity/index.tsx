@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Diversity (){
   return (
     
-<section className="bg-dark-2 py-14" data-aos="fade-in">
+<section className="bg-dark-2 py-14">
   <div className="mx-auto max-w-screen-xl md:px-8">
     <div className="items-start gap-x-12 sm:px-4 md:px-0 lg:flex">
       <div className="flex-1 lg:block">

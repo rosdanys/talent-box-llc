@@ -1,7 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Culture from "@/components/Culture";
-import Diversity from "@/components/Diversity";
-import Executive from "@/components/Executive";
+import PharmaManufacturing from "@/components/PharmaManufacturing";
 
 import { Metadata } from "next";
 
@@ -11,16 +9,16 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const ExecutivePage = () => {
+const PharmaPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Executive and Professional Search"
+        pageName="Pharma Manufacturing"
         description=""
       />
-      <Executive />
+      <PharmaManufacturing />
     </>
   );
 };
 
-export default ExecutivePage;
+export default PharmaPage;

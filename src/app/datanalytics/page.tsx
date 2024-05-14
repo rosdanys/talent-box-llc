@@ -1,7 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Culture from "@/components/Culture";
-import Diversity from "@/components/Diversity";
-import Executive from "@/components/Executive";
+import DataAnalytics from "@/components/DataAnalytics";
 
 import { Metadata } from "next";
 
@@ -11,16 +9,16 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const ExecutivePage = () => {
+const DataAnalyticsPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Executive and Professional Search"
+        pageName="Data Analytics, Engineering, and Technology"
         description=""
       />
-      <Executive />
+      <DataAnalytics />
     </>
   );
 };
 
-export default ExecutivePage;
+export default DataAnalyticsPage;
