@@ -8,7 +8,7 @@ export default function PharmaManufacturing() {
         <div className="items-start gap-x-12 sm:px-4 md:px-0 lg:flex">
           <div className="flex-1 lg:block">
             <Image
-              src="/images/noimage.jpg"
+              src="/images/pharma/pharma.jpg"
               className="sm:rounded-lg md:max-w-full lg:max-w-lg"
               width={774}
               height={600}

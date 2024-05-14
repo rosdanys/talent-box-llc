@@ -21,7 +21,7 @@ export default function HealthCare() {
             </p>
             <span className="mt-3 text-body-color dark:text-dark-6">
               <p className="py-2">
-                {`Exceptional patient experiences begin with exceptional people, and at o, we specialize in sourcing the nurses, clinicians, physicians, and other healthcare professionals essential to your success. Our expertise lies in identifying top talent that not only possesses the necessary skills but also embodies the values and ethos of your organization. Whether you need talent locally or across regions, we are dedicated to bringing the right individuals to you, ensuring seamless integration into your team and a commitment to delivering the highest standard of care. `}
+                {`Exceptional patient experiences begin with exceptional people, and at Talent Box, we specialize in sourcing the nurses, clinicians, physicians, and other healthcare professionals essential to your success. Our expertise lies in identifying top talent that not only possesses the necessary skills but also embodies the values and ethos of your organization. Whether you need talent locally or across regions, we are dedicated to bringing the right individuals to you, ensuring seamless integration into your team and a commitment to delivering the highest standard of care. `}
               </p>              
             </span>
           </div>

@@ -7,7 +7,7 @@ export default function  DataAnalyticsHome() {
         <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex lg:flex-row-reverse">
         <div className="flex-1 sm:hidden lg:block">
             <Image
-              src="/images/noimage.jpg"
+              src="/images/datanalytics/datanalytics.jpg"
               className="sm:rounded-lg md:max-w-lg"
               alt=""
               width={774}
