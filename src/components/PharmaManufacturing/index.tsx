@@ -21,8 +21,14 @@ export default function PharmaManufacturing() {
             </p>
             <span className="mt-3 text-body-color dark:text-dark-6">
               <p className="py-2">
-                {`Elevate your pharmaceutical manufacturing operations with our comprehensive services tailored to meet the unique demands of the industry. At Talent Box, we specialize in providing strategic solutions designed to optimize efficiency, quality, and compliance throughout the manufacturing process. From regulatory compliance and quality assurance to supply chain management and operational excellence, our team of experts is dedicated to supporting your organization at every stage of production. With our industry-leading expertise and innovative approach, we empower pharmaceutical manufacturers to streamline operations, minimize risk, and maximize productivity, ultimately driving success in today's competitive market. Experience the difference with our tailored solutions designed to meet your specific needs and propel your manufacturing operations to new heights.`}
-              </p>              
+                {`Elevate your pharmaceutical manufacturing operations with our comprehensive services tailored to meet the unique demands of the industry. At Talent Box, we specialize in providing strategic solutions designed to optimize efficiency, quality, and compliance throughout the manufacturing process. From automation engineering, EHS, regulatory compliance and quality assurance to supply chain management and operational excellence, our team of experts is dedicated to supporting your organization at every stage of production.`}
+              </p>   
+              <p className="py-2">
+                {`With our industry-leading expertise and innovative approach, we empower pharmaceutical manufacturers to streamline operations, minimize risk, and maximize productivity, ultimately driving success in today's competitive market.`}
+              </p>      
+              <p className="py-2">
+                {`Experience the difference with our tailored solutions designed to meet your specific needs and propel your manufacturing operations to new heights.`}
+              </p>                 
             </span>
           </div>
         </div>
