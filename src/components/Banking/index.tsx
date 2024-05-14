@@ -19,7 +19,7 @@ export default function Banking() {
             Banking and Finance Services
             </p>
             <span className="mt-3 text-body-color dark:text-dark-6">
-              <p className="py-2">{`Navigating the challenges of recruiting in the financial and professional services industry, especially amidst mergers, acquisitions, and evolving regulations, demands specialized expertise. With Talent Box, you gain access to experienced professionals adept at sourcing, attracting, and engaging top talent across various sectors including retail, small business, & commercial banking, insurance, wealth management, and private banking.`}</p>
+              <p className="py-2">{`Navigating the challenges of recruiting in the financial and professional services industry, especially amidst mergers, acquisitions, and evolving regulations, demands specialized expertise. With Talent Box, you gain access to experienced professionals adept at sourcing, attracting, and engaging top talent across various sectors including retail, small business banking, commercial banking, insurance, wealth management, and private banking.`}</p>
             </span>
           </div>
         </div>
