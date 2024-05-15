@@ -27,9 +27,16 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark text">
+                <span className="mb-6 font-bold leading-snug text-white  sm:leading-snug lg:leading-[1.2]">
+                  <span>
+                    Unlocking <span className="text-primary">Potential,</span>
+                  </span>
+                  <br />
+                  <span>
+                    <span className="text-primary">Connecting</span> Talent
+                  </span>
+                </span>
                 </p>
                 <div className="flex items-center">
                   <a
