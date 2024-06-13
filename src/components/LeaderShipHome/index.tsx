@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function LeaderShipHome (){
 const teams = [
-  {name: "Michael Petri", description: "Co-Founder", image: "/images/ourteam/team-01.png", link:'/leadership/#michael'},
+  {name: "Michael Petri", description: "Co-Founder", image: "/images/ourteam/team-01.jpg", link:'/leadership/#michael'},
   {name: "Jeanna Ferrel", description: "Digital Marketer", image: "/images/ourteam/team-02.png",link:'/leadership/#jeanna'},
 ]
 
