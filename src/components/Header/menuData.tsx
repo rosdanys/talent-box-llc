@@ -49,6 +49,12 @@ const menuData: Menu[] = [
         path: "/executive",
         newTab: false,
       },
+      {
+        id: 53,
+        title: "Simple Outsourcing",
+        path: "/simple",
+        newTab: false,
+      },
     ],
   },
   {

@@ -1,24 +1,24 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Contact from "@/components/Contact";
+import SimpleOutSourcing from "@/components/SimpleOutSourcing";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page ",
+  title: "Simple Outsourcing",
   description: "",
   // other metadata
 };
 
-const ContactPage = () => {
+const SimpleOutSourcingPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Contact Page"
+        pageName="Simple Outsourcing"
         description=""
       />
-      <Contact />
+      <SimpleOutSourcing />
     </>
   );
 };
 
-export default ContactPage;
+export default SimpleOutSourcingPage;

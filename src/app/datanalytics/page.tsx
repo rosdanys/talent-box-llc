@@ -4,8 +4,8 @@ import DataAnalytics from "@/components/DataAnalytics";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
+  title: "Data Analytics, Engineering, and Technology",
+  description: "",
   // other metadata
 };
 

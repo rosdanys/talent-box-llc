@@ -4,8 +4,8 @@ import Rpo from "@/components/Rpo";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
+  title: "Recruitment Process Outsourcing (RPO)",
+  description: "",
   // other metadata
 };
 
