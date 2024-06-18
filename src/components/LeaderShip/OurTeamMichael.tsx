@@ -44,15 +44,11 @@ export default function OurTeamMichael() {
                 </h2>
               </span>
               <p className="text-lg leading-relaxed">
-               {` Michael Petri is a bilingual Talent Acquisition professional with over a decade of experience across various industries. Known for his effective recruitment strategies and proficiency in full-cycle recruitment, Michael has successfully sourced and retained top talent.`}
+               {`Michael Petri is a bilingual Talent Acquisition professional with over two decades of experience across various industries. Known for his effective recruitment strategies and expertise in full-cycle recruitment, Michael has successfully sourced and retained top talent for some of the world's largest organizations, which include American Express, Del Monte, GE Capital, GE Healthcare, Korn Ferry, and Pfizer.`}
               </p>
               <br />
               <p className="text-lg leading-relaxed">
-                {`At Pfizer, he excelled as a Senior Talent Advisor, managing diverse requisitions and supporting diversity and inclusion initiatives. His career includes key roles at American Express, GE Capital, GE Healthcare, Korn Ferry, and Del Monte.`}
-              </p>
-              <br />
-              <p className="text-lg leading-relaxed">
-               {`Michael holds a Master’s in Human Resources Management from Florida International University and a Bachelor’s in Political Science from St. Mary's University, supplemented by specialized training in recruiting management and sourcing methodologies.`}
+                {`Michael holds a Master’s in Human Resources Management from Florida International University and a Bachelor’s in Political Science from St. Mary's University.`}
               </p>
             </div>
           </div>
