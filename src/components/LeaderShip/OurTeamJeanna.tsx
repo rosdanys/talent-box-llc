@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OurTeamJeanna() {
   return (
-    <section className="body-font bg-gray-900 text-gray-400">
+    <section className="body-font bg-gray-900 text-gray-400" id="jeanna">
       <div className="container mx-auto flex flex-col px-5 py-12">
         <div className="mx-auto lg:w-4/6">
           <div className="mt-10 flex flex-col-reverse md:flex-row lg:flex-row">
