@@ -14,31 +14,13 @@ export default function OurTeamJeanna() {
                 </h2>
               </span>
               <p className="text-lg leading-relaxed">
-               {` Michael Petri is a seasoned and results-oriented bilingual
-                Talent Acquisition professional with over a decade of experience
-                spanning various industries. With a strong track record of
-                sourcing, recruiting, and retaining top-tier talent, Michael has
-                honed his expertise in developing and implementing innovative
-                recruitment strategies aligned with organizational goals.`}
+               {`With over two decades of expertise in Recruitment Process Outsourcing (RPO), corporate, and agency settings, Jeanna is a seasoned consulting professional specializing in strategic human capital management. Her leadership spans diverse sectors including Aerospace, Healthcare, Pharma, and IT, where she has effectively managed high-volume recruitment teams.`}
               </p>
               <br />
               <p className="text-lg leading-relaxed">
-                {`Throughout his career, Michael has showcased proficiency in full-cycle recruitment, interviewing, negotiation, and offer closing. His keen understanding of recruitment technologies has seen him adeptly utilize a range of tools, including Applicant Tracking Systems (ATS), Customer Relationship Management (CRM) platforms, and AI recruiting systems, among others. In his most recent role as a Senior Talent Advisor at Pfizer, Michael demonstrated his ability to excel in a remote environment, successfully managing a diverse array of requisitions within the pharmaceutical manufacturing sector. His commitment to diversity and inclusion initiatives, coupled with his strategic collaboration with department heads and HR partners, has contributed to Pfizer's recruitment success.`}
+                {`Jeanna excels in full lifecycle recruiting, having played pivotal roles at Futurestep and Korn Ferry, including Project Manager, where she consistently delivered client-focused solutions. Her career showcases senior recruitment and leadership positions at global firms, underscoring her dedication to excellence in talent acquisition.`}
               </p>
-              <br />
-              <p className="text-lg leading-relaxed">
-               {` Prior to Pfizer, Michael held key positions with American
-                Express, GE Capital, GE Healthcare, Korn Ferry, Del Monte, and
-                other renowned organizations, where he consistently delivered
-                specialist and niche hiring solutions while ensuring compliance
-                with industry regulations and internal policies. Michael holds a
-                Master of Science in Human Resources Management from Florida
-                International University and a Bachelor of Arts in Political
-                Science from St. Mary’s University. Complementing his academic
-                credentials, Michael has pursued additional training and
-                certifications in recruiting management and sourcing
-                methodologies.`}
-              </p>
+              
             </div>
 
             <div className="text-center sm:w-1/3 sm:py-8 sm:pl-8">
@@ -51,7 +33,7 @@ export default function OurTeamJeanna() {
                     height="500"
                     loading="eager"
                     sizes="(max-width: 768px) 100vw, 432px"
-                    src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                    src="/images/ourteam/team-02.jpg"
                     style={{
                       objectFit: "cover",
                       objectPosition: "center",
@@ -65,7 +47,7 @@ export default function OurTeamJeanna() {
               </div>
               <div className="flex flex-col items-center justify-center text-center">
                 <h2 className="title-font mt-4 text-lg font-medium text-white">
-                  Jeanna
+                  Jeanna Czerniejewski
                 </h2>
                 <div className="mb-4 mt-2 h-1 w-12 rounded bg-primary"></div>
                 <p className="text-base text-gray-400">Co-Founder.</p>

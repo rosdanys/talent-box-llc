@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function LeaderShipHome (){
 const teams = [
   {name: "Michael Petri", description: "Co-Founder", image: "/images/ourteam/team-01.jpg", link:'/leadership/#michael'},
-  {name: "Jeanna Ferrel", description: "Digital Marketer", image: "/images/ourteam/team-02.png",link:'/leadership/#jeanna'},
+  {name: "Jeanna Czerniejewski", description: "Digital Marketer", image: "/images/ourteam/team-02.jpg",link:'/leadership/#jeanna'},
 ]
 
 return (
@@ -12,9 +12,7 @@ return (
     <div className="-mx-4 flex flex-wrap">
       <div className="w-full px-4">
         <div className="mx-auto mb-[60px] max-w-[485px] text-center">
-          <span className="text-primary mb-2 block text-lg font-semibold">
-            Our Leadership
-          </span>
+          
           <h2 className="mb-3 text-3xl leading-[1.2] font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
             Our Leadership
           </h2>
