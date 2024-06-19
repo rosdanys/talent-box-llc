@@ -17,7 +17,7 @@ export default function CultureHome (){
                 </p>
                
                 <p className="mt-3 text-body-color dark:text-dark-6">
-                {`At Talent Box LLC, we're dedicated to creating an inclusive and innovative environment where diversity thrives as the catalyst for success. Built on respect, empathy, and collaboration, our culture fosters continuous growth and development for every team member. With transparency and integrity as our cornerstones, we prioritize ethical standards in all interactions, building trust with clients and candidates alike. As partners in their success stories, we're passionate about making meaningful connections and driving positive change in Talent Acquisition. Join us in reshaping the future, where everyone's potential is valued and unleashed.`}
+                {`At Talent Box, we're dedicated to creating an inclusive and innovative environment where diversity thrives as the catalyst for success. Built on respect, empathy, and collaboration, our culture fosters continuous growth and development for every team member. With transparency and integrity as our cornerstones, we prioritize ethical standards in all interactions, building trust with clients and candidates alike. As partners in their success stories, we're passionate about making meaningful connections and driving positive change in Talent Acquisition. Join us in reshaping the future, where everyone's potential is valued and unleashed.`}
                 </p>
                 <a href="/culture" className="inline-flex gap-x-1 items-center text-primary hover:text-btn-hover-dark duration-150 font-medium">
                     Learn more

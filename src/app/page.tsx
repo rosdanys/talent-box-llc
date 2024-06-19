@@ -21,7 +21,7 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: " Home | Talent Box LLC",
+  title: " Home | Talent Box",
   description: "This is Home for Startup Nextjs Template",
   // other metadata
 };
