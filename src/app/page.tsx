@@ -16,6 +16,7 @@ import LeaderShipHome from "@/components/LeaderShipHome";
 import PharmaManufacturingHome from "@/components/PharmaManufacturingHome";
 import Pricing from "@/components/Pricing";
 import RpoHome from "@/components/RpoHome";
+import SimpleOutSourcingHome from "@/components/SimpleOutSourcingHome";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
@@ -44,6 +45,7 @@ export default function Home() {
       <CultureHome />
       <DiversityHome />
       <LeaderShipHome />
+      <SimpleOutSourcingHome/>
       <RpoHome/>
       <ExecutiveHome/>
       <HealthCareHome/>

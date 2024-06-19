@@ -51,7 +51,14 @@ export default function SimpleOutSourcing() {
               Talent Acquisition On-Demand Types
               </p>
               <span className="mt-3 text-body-color dark:text-dark-6">
-                <p className="py-2">{`Talent Advisor, Sourcer, or Process Workflow Designer.`}</p>
+              <h2 className="text-white my-2">Talent Advisor</h2><p className="py-2">{`
+Talent Advisors who integrate into your team as if they were your own employees. We will pair you with a Talent Advisor who specializes in your specific hiring needs and can effortlessly adapt to your company culture.
+`}</p>
+                <h2 className="text-white my-2">Sourcer</h2><p className="py-2">{`
+Sourcers who are passionate about candidate searches and consistently provide robust candidate pipelines for you. Our specialized team handles the entire process, delivering qualified candidates for your weekly hiring leader engagements.
+`}</p>
+                <h2 className="text-white my-2">Process Improvement Designer</h2><p className="py-2">{`
+Talent consultants who seamlessly integrate with your team to enhance your processes. With intelligent design, we create innovative talent acquisition experiences that deliver results.`}</p>
               </span>
             </div>
             <div className="flex-1 lg:block">
