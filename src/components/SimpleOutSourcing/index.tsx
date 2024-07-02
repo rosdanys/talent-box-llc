@@ -63,7 +63,7 @@ Sourcers who are passionate about candidate searches and consistently provide ro
                   Process Improvement Designer
                 </h2>
                 <p className="py-2">{`
-Talent consultants who seamlessly integrate with your team to enhance your processes. With intelligent design, we create innovative talent acquisition experiences that deliver results.`}</p>
+Talent consultants who seamlessly integrate with your team to enhance your processes. With intelligent design, we create innovative talent acquisition workflows that deliver results.`}</p>
               </span>
             </div>
             <div className="flex-1 lg:block">

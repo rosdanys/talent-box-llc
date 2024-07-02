@@ -17,8 +17,8 @@ export default function Contact() {
                 <span className="mb-6 block text-base font-medium text-dark dark:text-white">
                   CONTACT US
                 </span>
-                <h2 className="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
-                  {`Let's talk about your problem.`}
+                <h2 className="max-w-[280px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
+                  {`Partner with us to find your next hire!`}
                 </h2>
               </div>
               <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
