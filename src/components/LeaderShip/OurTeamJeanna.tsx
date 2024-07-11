@@ -27,7 +27,7 @@ export default function OurTeamJeanna() {
               <div className="inline-flex h-36 w-36 items-center justify-center rounded-full bg-gray-800 text-gray-600">
                 <div className="relative m-auto max-w-4xl">
                   <Image
-                    alt="Colorful Image"
+                    alt="Jeanna Czerniejewski"
                     className="mx-auto w-full rounded-full bg-gray-500 shadow-lg"
                     decoding="async"
                     height="500"

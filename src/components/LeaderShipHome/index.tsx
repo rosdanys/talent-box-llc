@@ -31,7 +31,13 @@ return (
             <a href={team.link} className="cursor-pointer">
             <div className="wow fadeInUp group shadow-testimonial dark:shadow-none mb-8 rounded-xl bg-white dark:bg-dark px-5 pt-12 pb-10" data-wow-delay=".1s">
               <div className="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
-                <Image src={team.image} alt="team image" width={120} height={120} className="h-[120px] w-[120px] rounded-full" />
+                <Image src={team.image} alt="team image" width={120} height={120} className=" mx-auto w-full rounded-full bg-gray-500 shadow-lg"  style={{
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      width: "100%",
+                      height: "auto",
+                      aspectRatio: 1,
+                    }}/>
                 <span
                   className="bg-secondary absolute bottom-0 left-0 -z-10 h-10 w-10 rounded-full opacity-0 transition-all group-hover:opacity-100"></span>
                 <span className="absolute top-0 right-0 -z-10 opacity-0 transition-all group-hover:opacity-100">
