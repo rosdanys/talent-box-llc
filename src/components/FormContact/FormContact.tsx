@@ -6,11 +6,10 @@ import * as Yup from 'yup';
 import { TextAreaField } from './TextAreaField';
 import { sendContactForm } from '@/libs/actions';
 import toast from 'react-hot-toast';
+import { emailValidation } from '@/libs/constant';
 
 export const FormContact = () => {
-  const emailValidation =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
+ 
   const validate = Yup.object({
     fullName: Yup.string()
       .max(35, 'Must be 35 characters or more')

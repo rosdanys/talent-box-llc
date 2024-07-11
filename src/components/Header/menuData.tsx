@@ -96,7 +96,7 @@ const menuData: Menu[] = [
       {
         id: 41,
         title: "Secure Talent",
-        path: "/about",
+        path: "/securetalent",
         newTab: false,
       },
       {

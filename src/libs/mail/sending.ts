@@ -1,6 +1,5 @@
 import nodemailer from "nodemailer";
-import { ContactForm } from "@/types/contact";
-
+import { ContactForm, TalentForm } from "@/types/contact";
 
 export async function sendMail({
   name,
@@ -17,12 +16,12 @@ export async function sendMail({
     process.env.NEXT_PUBLIC_SMTP_EMAIL_ADMIN_FULLNAME;
 
   const transport = nodemailer.createTransport({
-    host: 'smtpout.secureserver.net',
+    host: "smtpout.secureserver.net",
     secure: true,
     tls: {
-        ciphers:'SSLv3'
+      ciphers: "SSLv3",
     },
-    requireTLS:true,
+    requireTLS: true,
     port: 465,
     debug: true,
     auth: {
@@ -30,8 +29,6 @@ export async function sendMail({
       pass: SMTP_PASSWORD,
     },
   });
-
- 
 
   // Tester Email
   /* try {
@@ -45,8 +42,8 @@ export async function sendMail({
 
   try {
     const sendResult = await transport.sendMail({
-      from: SMTP_EMAIL_ADMIN_FULLNAME,
-      to: SMTP_EMAIL_ADMIN,
+      to: SMTP_EMAIL_ADMIN_FULLNAME,
+      from: SMTP_EMAIL_ADMIN,
       subject,
       html: body,
     });
@@ -56,7 +53,6 @@ export async function sendMail({
     return;
   }
 }
-
 
 export async function compileTemplateMail(formdata: ContactForm) {
   let htmlContent = `
@@ -70,14 +66,32 @@ export async function compileTemplateMail(formdata: ContactForm) {
         <p>Message:</p>
         <p>{{ message }}</p>
       <br>
-  </div>`
+  </div>`;
 
-   // replace merge tags with values
-   htmlContent = replaceMergeTags(formdata, htmlContent);
+  // replace merge tags with values
+  htmlContent = replaceMergeTags(formdata, htmlContent);
 
   return htmlContent;
 }
 
+// for Talent
+export async function compileTemplateMailTalent(formdata: TalentForm) {
+  let htmlContent = `
+  <div style="font-family: sans-serif;">
+      <br>
+        <p>First Name: {{ firstName }}</p>
+        <p>Last Name: {{ lastName }}</p>
+        <p>Company Name: {{ companyName }}</p>
+        <p>Email: {{ email }}</p>
+        <p>Phone: {{ phone }}</p>
+        <p>Role: {{ role }}</p>
+      <br>
+  </div>`;
+  // replace merge tags with values
+  htmlContent = replaceMergeTags(formdata, htmlContent);
+
+  return htmlContent;
+}
 /**
  * Replaces any instance of {{ variableName }} with the values
  * @param data (object)  The data object whose keys are the variable names (string) along with corresponding values
