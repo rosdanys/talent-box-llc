@@ -22,9 +22,6 @@ const fileSchema = z.object({
   content: z.any(), // zod doesn't works well with instanceof(File) or FileList
 });
 
-const INBOUND_CTA_TYPE_LABELS = [{
-
-}]
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "Required" }),
@@ -164,6 +161,7 @@ export default function Home() {
                   <FormControl>
                     <Input
                       type="file"
+                      accept=".pdf"
                       onChange={(e) => {
                         const files = e.target.files;
                         if (files) {
