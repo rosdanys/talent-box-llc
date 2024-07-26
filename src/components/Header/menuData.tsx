@@ -102,7 +102,7 @@ const menuData: Menu[] = [
       {
         id: 42,
         title: "Get Hired",
-        path: "/contact",
+        path: "/gethired",
         newTab: false,
       },
       {

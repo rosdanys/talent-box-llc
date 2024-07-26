@@ -1,5 +1,43 @@
 import nodemailer from "nodemailer";
-import { ContactForm, TalentForm } from "@/types/contact";
+import { ContactForm, HiredForm, TalentForm } from "@/types/contact";
+import { SchemaFormHired } from "@/components/FormHired/FormHired";
+
+
+const SMTP_PASSWORD = process.env.NEXT_PUBLIC_SMTP_PASSWORD;
+const SMTP_EMAIL_ADMIN = process.env.NEXT_PUBLIC_SMTP_EMAIL_ADMIN;
+const SMTP_EMAIL_ADMIN_FULLNAME =
+  process.env.NEXT_PUBLIC_SMTP_EMAIL_ADMIN_FULLNAME;
+
+  // transport for email godaddy
+/* const transport = nodemailer.createTransport({
+  host: "smtpout.secureserver.net",
+  secure: true,
+  tls: {
+    ciphers: "SSLv3",
+  },
+  requireTLS: true,
+  port: 465,
+  debug: true,
+  auth: {
+    user: SMTP_EMAIL_ADMIN,
+    pass: SMTP_PASSWORD,
+  },
+}); */
+
+// transport for gmail
+const transport = nodemailer.createTransport({
+  service: "Gmail",
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
+  debug: true,
+  auth: {
+    user: SMTP_EMAIL_ADMIN,
+    pass: SMTP_PASSWORD,
+  },
+});
+
+
 
 export async function sendMail({
   name,
@@ -10,26 +48,7 @@ export async function sendMail({
   subject: string;
   body: string;
 }) {
-  const SMTP_PASSWORD = process.env.NEXT_PUBLIC_SMTP_PASSWORD;
-  const SMTP_EMAIL_ADMIN = process.env.NEXT_PUBLIC_SMTP_EMAIL_ADMIN;
-  const SMTP_EMAIL_ADMIN_FULLNAME =
-    process.env.NEXT_PUBLIC_SMTP_EMAIL_ADMIN_FULLNAME;
-
-  const transport = nodemailer.createTransport({
-    host: "smtpout.secureserver.net",
-    secure: true,
-    tls: {
-      ciphers: "SSLv3",
-    },
-    requireTLS: true,
-    port: 465,
-    debug: true,
-    auth: {
-      user: SMTP_EMAIL_ADMIN,
-      pass: SMTP_PASSWORD,
-    },
-  });
-
+  
   // Tester Email
   /* try {
     const testResult = await transport.verify()
@@ -42,7 +61,7 @@ export async function sendMail({
 
   try {
     const sendResult = await transport.sendMail({
-      to: SMTP_EMAIL_ADMIN_FULLNAME,
+      to: SMTP_EMAIL_ADMIN_FULLNAME, // intercambiar to a from
       from: SMTP_EMAIL_ADMIN,
       subject,
       html: body,
@@ -54,6 +73,42 @@ export async function sendMail({
   }
 }
 
+export async function sendMailAttachment({
+  name,
+  subject,
+  body,
+  attachment
+}: {
+  name: string;
+  subject: string;
+  body: string;
+  attachment:any
+}) {
+ 
+   // Tester Email
+  try {
+    const testResult = await transport.verify()
+    console.log("is ",testResult );
+    
+   } catch (error) {
+    console.log(error);
+   }  
+
+  try {
+    const sendResult = await transport.sendMail({
+      to: SMTP_EMAIL_ADMIN_FULLNAME, // intercambiar to a from
+      from: SMTP_EMAIL_ADMIN,
+      subject,
+      html: body,
+      attachments: attachment
+    });
+    return sendResult.messageId;
+  } catch (error) {
+    console.log(error);
+    return;
+  }
+}
+// for contact
 export async function compileTemplateMail(formdata: ContactForm) {
   let htmlContent = `
   <div style="font-family: sans-serif;">
@@ -61,8 +116,8 @@ export async function compileTemplateMail(formdata: ContactForm) {
       <p>You have received the following inquiry:</p>
       <br>
         <p>Name: {{ fullName }}</p>
-        <p>Email: {{ email }}</p>
-        <p>Phone: {{ phone }}</p>
+        <p>Email: <a href="mailto:{{ email }}">{{ email }}</a></p>
+        <p>Phone: <a href="tel:{{ phone }}">{{ phone }}</a></p>
         <p>Message:</p>
         <p>{{ message }}</p>
       <br>
@@ -82,9 +137,28 @@ export async function compileTemplateMailTalent(formdata: TalentForm) {
         <p>First Name: {{ firstName }}</p>
         <p>Last Name: {{ lastName }}</p>
         <p>Company Name: {{ companyName }}</p>
-        <p>Email: {{ email }}</p>
-        <p>Phone: {{ phone }}</p>
+        <p>Email: <a href="mailto:{{ email }}">{{ email }}</a></p>
+        <p>Phone: <a href="tel:{{ phone }}">{{ phone }}</a></p>
         <p>Role: {{ role }}</p>
+      <br>
+  </div>`;
+  // replace merge tags with values
+  htmlContent = replaceMergeTags(formdata, htmlContent);
+
+  return htmlContent;
+}
+// for Hired
+export async function compileTemplateMailHired(formdata) {
+  let htmlContent = `
+  <div style="font-family: sans-serif;">
+      <br>
+        <p>First Name: {{ firstName }}</p>
+        <p>Last Name: {{ lastName }}</p>       
+        <p>Email: <a href="mailto:{{ email }}">{{ email }}</a></p>
+        <p>Phone: <a href="tel:{{ phone }}">{{ phone }}</a></p>
+        <p>I am: {{ iam }}</p>
+        <p>Workplace preference: {{ workPlace }}</p>
+        <p>Tax Status: {{ taxStatus }}</p>
       <br>
   </div>`;
   // replace merge tags with values

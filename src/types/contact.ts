@@ -12,3 +12,13 @@ export type TalentForm = {
   phone: string;
   role: string;
 };
+export type HiredForm = {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  phone?: string;
+  cvfile?: any;
+  iam?: string,
+  workPlace?: string,
+  taxStatus?: string
+};
