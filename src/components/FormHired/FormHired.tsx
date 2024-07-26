@@ -30,7 +30,7 @@ const schemaformHired = z.object({
   phone: z.string().refine(isMobilePhone, { message: "Phone Number Invalid!" }),
   cvfile: z
     .any(fileSchema)
-    .refine((file: File) => file?.length !== 0, "File is required")
+    /* .refine((file: File) => file?.length !== 0, "File is required") */
     .refine(
       (file: File) => checkFileType(file),
       "Only .pdf, .docx, .doc formats are supported.",
