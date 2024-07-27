@@ -45,7 +45,7 @@ export const ViewEmail = ({
                 New Get Hired
               </Text>
               <Text>First Name: <Text style={footer}>{firstName}</Text></Text>
-              <Text>LastName: <Text style={footer}>{lastName}</Text></Text>
+              <Text>Last Name: <Text style={footer}>{lastName}</Text></Text>
 
               <Text> Email:
                 <Link href={`mailto:${email}`} style={link}>
