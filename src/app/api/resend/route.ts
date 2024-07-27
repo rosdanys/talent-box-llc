@@ -1,6 +1,5 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
-import { EmailTemplate } from "@/libs/mail/email-template";
 import ViewEmail from "@/libs/mail/email-template-hired";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
