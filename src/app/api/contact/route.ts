@@ -1,36 +1,29 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
-import ViewEmail from "@/libs/mail/email-template-hired";
+import { ViewEmailContact } from "@/libs/mail/email-template-contact";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
   const json = req.json();
   const {
-    firstName,
-    lastName,
+    fullName,
     email,
     phone,
-    iam,
-    workPlace,
-    taxStatus,
+    message
   } = await json;
    
-  const fullName = firstName + " " + lastName;
 
   try {
     const data = await resend.emails.send({
       from: process.env.NEXT_PUBLIC_RESEND_ADMIN,
       to: [process.env.NEXT_PUBLIC_RESEND_SENDING],
-      subject: "Get hired by " + fullName,
-      react: ViewEmail({
-        firstName,
-        lastName,
+      subject: "New Contact Form by " + fullName,
+      react: ViewEmailContact({
+        fullName,
         email,
         phone,
-        iam,
-        workPlace,
-        taxStatus,
+        message
       }),
     });
 

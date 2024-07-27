@@ -34,7 +34,7 @@ const formSchema = z.object({
   taxStatus: z.string().min(1, { message: "Required" }),
 });
 
-export default function Home() {
+export default function FormHiredAttachment() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -122,7 +122,7 @@ export default function Home() {
                   <FormLabel>Email*</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="example@domain.com"
+                      placeholder="example@yourmail.com"
                       autoComplete="off"
                       {...field}
                     />
@@ -179,6 +179,9 @@ export default function Home() {
                       }}
                     />
                   </FormControl>
+                  <FormDescription>
+                  PDF file size must be less than 4MB
+                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -281,8 +284,8 @@ export default function Home() {
           />
     
 
-            <Button variant={"destructive"} type="submit">
-              Submit
+            <Button variant={"destructive"} type="submit" className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-btn-hover-dark">
+              Send
             </Button>
           </form>
         </Form>

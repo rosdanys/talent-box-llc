@@ -1,4 +1,5 @@
 import { FormTalent } from "../FormTalent/FormTalent";
+import FormTalentResend from "../FormTalent/FormTalentResend";
 
 export default function SecureTalent() {
   return (
@@ -24,7 +25,7 @@ export default function SecureTalent() {
             </div>
           </div>
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">    
-            <FormTalent />
+            <FormTalentResend />
           </div>
         </div>
       </div>
