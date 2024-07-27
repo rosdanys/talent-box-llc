@@ -105,12 +105,6 @@ const menuData: Menu[] = [
         path: "/gethired",
         newTab: false,
       },
-      {
-        id: 43,
-        title: "Find Your Opportunity",
-        path: "/blog",
-        newTab: false,
-      },
     ],
   },
   {

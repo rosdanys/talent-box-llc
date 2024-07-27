@@ -31,17 +31,17 @@ const Hero = () => {
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     data-aos="fade-in"
-                    href="/"
+                    href="/securetalent"
                     className="rounded-md bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     Hire Talent
                   </Link>
                   <Link
                     data-aos="fade-in"
-                    href="/"
+                    href="/gethired"
                     className="inline-block rounded-md bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Find a Job
+                    Get Hired
                   </Link>
                 </div>
               </div>
