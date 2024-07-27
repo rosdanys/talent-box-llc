@@ -22,7 +22,7 @@ const formSchema = z.object({
   fullName: z.string().min(1, { message: "Required" }),
   email: z.string().email(),
   phone: z.string().refine(isMobilePhone, { message: "Phone Number Invalid!" }),
-  message: z.string().min(1,{message: "Required" })
+  message: z.string().min(1, { message: "Required" }),
 });
 
 export default function FormContactResend() {
@@ -32,24 +32,24 @@ export default function FormContactResend() {
       fullName: "",
       email: "",
       phone: "",
-      message: ""
+      message: "",
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {    
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     const response = await fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify({
         fullName: values.fullName,
         email: values.email,
         phone: values.phone,
-        message: values.message
+        message: values.message,
       }),
     });
 
     if (response.ok) {
       // alert('Send Email')
-      form.reset()
+      form.reset();
       toast.success("Send Success OK!");
     } else {
       // alert('Error')
@@ -75,12 +75,16 @@ export default function FormContactResend() {
                 <FormItem>
                   <FormLabel>Full Name*</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" autoComplete="off" {...field} />
+                    <Input
+                      placeholder="John Doe"
+                      autoComplete="off"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
-            />       
+            />
             {/*Email*/}
             <FormField
               control={form.control}
@@ -119,7 +123,6 @@ export default function FormContactResend() {
               )}
             />
 
-
             {/*Message*/}
             <FormField
               control={form.control}
@@ -138,8 +141,13 @@ export default function FormContactResend() {
                 </FormItem>
               )}
             />
-           
-            <Button variant={"destructive"} type="submit" className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-btn-hover-dark">
+
+            <Button
+              variant={"destructive"}
+              type="submit"
+              disabled={form.formState.isSubmitting}
+              className="hover:bg-btn-hover-dark inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out"
+            >
               Send
             </Button>
           </form>

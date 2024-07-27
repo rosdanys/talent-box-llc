@@ -180,6 +180,7 @@ export default function FormTalentResend() {
             <Button
               variant={"destructive"}
               type="submit"
+              disabled={form.formState.isSubmitting}
               className="hover:bg-btn-hover-dark inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out"
             >
               Send

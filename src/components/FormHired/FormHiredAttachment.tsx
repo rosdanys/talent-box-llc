@@ -284,7 +284,7 @@ export default function FormHiredAttachment() {
           />
     
 
-            <Button variant={"destructive"} type="submit" className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-btn-hover-dark">
+            <Button variant={"destructive"} disabled={form.formState.isSubmitting} type="submit" className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-btn-hover-dark">
               Send
             </Button>
           </form>
