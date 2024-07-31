@@ -23,7 +23,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: " Home | Talent Box",
-  description: "This is Home for Startup Nextjs Template",
+  description: "",
   // other metadata
 };
 
@@ -32,16 +32,6 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      {/* <Video /> */}
-      {/* 
-      <Features />
-      <Video />
-      <Brands />
-      <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
-      <Pricing />
-      <Blog /> */}
       <CultureHome />
       <DiversityHome />
       <LeaderShipHome />

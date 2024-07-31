@@ -8,7 +8,6 @@ const Footer = () => {
       <footer className="relative z-10 bg-white pt-16 dark:bg-[#090E34]  md:pt-20 lg:pt-24">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-1/3">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
@@ -27,16 +26,16 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark text">
-                <span className="mb-6 font-bold leading-snug text-white  sm:leading-snug lg:leading-[1.2]">
-                  <span>
-                    Unlocking <span className="text-primary">Potential,</span>
+                <p className="text mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                  <span className="mb-6 font-bold leading-snug text-white  sm:leading-snug lg:leading-[1.2]">
+                    <span>
+                      Unlocking <span className="text-primary">Potential,</span>
+                    </span>
+                    <br />
+                    <span>
+                      <span className="text-primary">Connecting</span> Talent
+                    </span>
                   </span>
-                  <br />
-                  <span>
-                    <span className="text-primary">Connecting</span> Talent
-                  </span>
-                </span>
                 </p>
                 <div className="flex items-center">
                   <a
@@ -102,6 +101,25 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className=" mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="0.88em"
+                      height="1em"
+                      viewBox="0 0 740 850"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M372 182q41 0 77 15t63 42t42 63t15 77t-15 76t-42 63t-63 42t-77 16t-77-16t-62-42t-42-63t-16-76t16-77t42-63t62-42t77-15m0 324q26 0 49-10t41-27t27-41t10-49t-10-50t-27-41t-41-27t-49-10t-49 10t-41 27t-27 41t-10 50t10 49t27 41t41 27t49 10m368-314q9 187 0 374q-2 36-17 68t-39 56t-57 40t-68 17q-47 2-93 3t-94 1t-93-1t-94-3q-36-2-68-17t-56-40t-40-56t-17-68q-8-187 0-374q2-36 17-68t40-57t56-39t68-17q187-9 374 0q36 2 68 17t57 39t39 57t17 68m-70 370q9-183 0-367q-1-22-11-42t-25-36t-36-26t-42-11q-46-2-92-3t-92-1t-92 1t-92 3q-22 1-42 11t-35 26t-26 36t-11 42q-9 184 0 368q1 22 11 42t26 35t35 26t42 11q184 9 368 0q22-1 42-11t36-26t25-36t11-42M569 138q18 0 31 13t13 31t-13 31t-31 13t-31-13t-13-31t13-31t31-13"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="/"
+                    aria-label="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
@@ -120,7 +138,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                About Talent Box
+                  About Talent Box
                 </h2>
                 <ul>
                   <li>
@@ -154,7 +172,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                Services
+                  Services
                 </h2>
                 <ul>
                   <li>
@@ -178,9 +196,9 @@ const Footer = () => {
                       href="/simple"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                       Simple Outsourcing
+                      Simple Outsourcing
                     </Link>
-                  </li> 
+                  </li>
                 </ul>
               </div>
             </div>
@@ -188,7 +206,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                Industries
+                  Industries
                 </h2>
                 <ul>
                   <li>
@@ -230,7 +248,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                Talent
+                  Talent
                 </h2>
                 <ul>
                   <li>
@@ -248,7 +266,7 @@ const Footer = () => {
                     >
                       Get Hired
                     </Link>
-                  </li>                 
+                  </li>
                 </ul>
               </div>
             </div>
@@ -256,7 +274,9 @@ const Footer = () => {
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
-          <p className="text-center text-base text-body-color dark:text-white">© {new Date().getFullYear()} Talent Box LLC</p>
+            <p className="text-center text-base text-body-color dark:text-white">
+              © {new Date().getFullYear()} Talent Box LLC
+            </p>
             {/* <p className="text-center text-base text-body-color dark:text-white">
               Template by{" "}
               <a

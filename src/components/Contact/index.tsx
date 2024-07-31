@@ -56,10 +56,7 @@ export default function Contact() {
                     </h5>
                     <p className="text-base text-body-color dark:text-dark-6">
                       <a href="tel:+1 305 234 4234">+1 305 234 4234</a> 
-                    </p>
-                    <p className="text-base text-body-color dark:text-dark-6">
-                      <a href="tel:+1 305 234 4567">+1 305 234 4567</a> 
-                    </p>
+                    </p>                    
                   </div>
                 </div>
                 <div className="mb-8 flex w-[330px] max-w-full">
@@ -78,11 +75,9 @@ export default function Contact() {
                       How Can We Help?
                     </h5>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                     <a href="mailto:contact@talentboxllc.com">contact@talentboxllc.com</a> 
                     </p>
-                    <p className="mt-1 text-base text-body-color dark:text-dark-6">
-                      contact@yourdomain.com
-                    </p>
+                    
                   </div>
                 </div>
               </div>
